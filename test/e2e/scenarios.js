@@ -30,10 +30,10 @@ describe('PhoneCat App', function() {
 	var query = element(by.model('query'));
 
 	query.clear();
-	expect(browser.getTitle()).toMatch(/Google Phone Gallery:\x*$/);
+	expect(browser.getTitle()).toMatch(/Google Phone Gallery:\s*$/);
 
 	query.sendKeys('nexus');
-	expect(browser.getTitle()).toMatch(/Google Phone Galler: nexus$/);
+	expect(browser.getTitle()).toMatch(/Google Phone Gallery: nexus$/);
 });
   });
 });
